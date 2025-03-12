@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { ChevronDown } from 'lucide-react';
 
-import CountDown from './countdown.component';
+import CountDown from './CountDown.component';
 import VerticalMovieReelSlider from './VerticalMovieReelSlider.component';
 import HeroBg from './HeroBg.component';
 
