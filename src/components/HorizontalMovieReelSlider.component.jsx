@@ -1,18 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
 
-import Pi1 from "@/assets/images/past/404error.png";
-import Pi2 from "@/assets/images/past/404error.png";
-import Pi3 from "@/assets/images/past/404error.png";
-import Pi4 from "@/assets/images/past/404error.png";
-import Pi5 from "@/assets/images/past/404error.png";
-import Pi6 from "@/assets/images/past/404error.png";
-import Pi7 from "@/assets/images/past/404error.png";
-import Pi8 from "@/assets/images/past/404error.png";
-import Pi9 from "@/assets/images/past/404error.png";
-import Pi10 from "@/assets/images/past/404error.png";
-import Pi11 from "@/assets/images/past/404error.png";
-import Pi12 from "@/assets/images/past/404error.png";
-
 const HorizontalMovieReelSlider = ({ direction = 'leftToRight', slideInterval = 2000 }) => {
   const containerRef = useRef(null);
   const [activeIndex, setActiveIndex] = useState(0);
@@ -23,18 +10,18 @@ const HorizontalMovieReelSlider = ({ direction = 'leftToRight', slideInterval = 
 
   // Sample images
   const images = [
-    { id: 1, url: Pi1, alt: "Movie frame 1" },
-    { id: 2, url: Pi2, alt: "Movie frame 2" },
-    { id: 3, url: Pi3, alt: "Movie frame 3" },
-    { id: 4, url: Pi4, alt: "Movie frame 4" },
-    { id: 5, url: Pi5, alt: "Movie frame 5" },
-    { id: 6, url: Pi6, alt: "Movie frame 6" },
-    { id: 7, url: Pi7, alt: "Movie frame 7" },
-    { id: 8, url: Pi8, alt: "Movie frame 8" },
-    { id: 9, url: Pi9, alt: "Movie frame 9" },
-    { id: 10, url: Pi10, alt: "Movie frame 10" },
-    { id: 11, url: Pi11, alt: "Movie frame 11" },
-    { id: 12, url: Pi12, alt: "Movie frame 12" },
+    { id: 1, url: "/images/past/1.jpg", alt: "Tech-fest'23 img-1" },
+    { id: 2, url: "/images/past/2.jpg", alt: "Tech-fest'23 img-2" },
+    { id: 3, url: "/images/past/3.jpg", alt: "Tech-fest'23 img-3" },
+    { id: 4, url: "/images/past/4.jpg", alt: "Tech-fest'23 img-4" },
+    { id: 5, url: "/images/past/5.jpg", alt: "Tech-fest'23 img-5" },
+    { id: 6, url: "/images/past/6.jpg", alt: "Tech-fest'23 img-6" },
+    { id: 7, url: "/images/past/7.jpg", alt: "Tech-fest'23 img-7" },
+    { id: 8, url: "/images/past/8.jpg", alt: "Tech-fest'23 img-8" },
+    { id: 9, url: "/images/past/9.jpg", alt: "Tech-fest'23 img-9" },
+    { id: 10, url: "/images/past/10.jpg", alt: "Tech-fest'23 img-10" },
+    { id: 11, url: "/images/past/11.jpg", alt: "Tech-fest'23 img-11" },
+    { id: 12, url: "/images/past/12.jpg", alt: "Tech-fest'23 img-12" },
   ];
 
   // Initialize with the middle set for both directions
@@ -145,13 +132,13 @@ const HorizontalMovieReelSlider = ({ direction = 'leftToRight', slideInterval = 
                   style={{ width: `${FRAME_WIDTH}px` }} // Accounting for the borders
                 >
                   {/* Image - Improved styling */}
-                  <img 
-                    src={image.url} 
-                    alt={image.alt} 
-                    className="w-full h-full object-cover" 
+                  <img
+                    src={image.url}
+                    alt={image.alt}
+                    className="w-full h-full object-cover"
                     style={{ display: 'block' }} // Ensure image is displayed as a block
                   />
-                  
+
                   {/* Overlay with reduced opacity */}
                   <div className="absolute inset-0 bg-slate-800 opacity-10"></div>
                 </div>
