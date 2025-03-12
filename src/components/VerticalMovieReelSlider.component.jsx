@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 
-import Pi1 from "@/assets/images/past/1.jpg";
+// import Pi1 from ;
 import Pi2 from "@/assets/images/past/404error.png";
 import Pi3 from "@/assets/images/past/404error.png";
 import Pi4 from "@/assets/images/past/404error.png";
@@ -23,7 +23,7 @@ const VerticalMovieReelSlider = ({ direction = 'topToBottom', slideInterval = 20
 
   // Sample images - DEFINING THIS BEFORE USING IT
   const images = [
-    { id: 1, url: Pi1, alt: "Movie frame 1" },
+    { id: 1, url: "/public/past/1.jpg", alt: "Movie frame 1" },
     { id: 2, url: Pi2, alt: "Movie frame 2" },
     { id: 3, url: Pi3, alt: "Movie frame 3" },
     { id: 4, url: Pi4, alt: "Movie frame 4" },
