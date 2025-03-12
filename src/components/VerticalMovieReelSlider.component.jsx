@@ -23,7 +23,7 @@ const VerticalMovieReelSlider = ({ direction = 'topToBottom', slideInterval = 20
 
   // Sample images - DEFINING THIS BEFORE USING IT
   const images = [
-    { id: 1, url: "/public/past/1.jpg", alt: "Movie frame 1" },
+    { id: 1, url: "/images/past/1.jpg", alt: "Movie frame 1" },
     { id: 2, url: Pi2, alt: "Movie frame 2" },
     { id: 3, url: Pi3, alt: "Movie frame 3" },
     { id: 4, url: Pi4, alt: "Movie frame 4" },
