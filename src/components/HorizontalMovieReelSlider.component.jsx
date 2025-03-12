@@ -1,17 +1,17 @@
 import React, { useState, useEffect, useRef } from 'react';
 
-import Pi1 from "../assets/images/past/1.jpg";
-import Pi2 from "../assets/images/past/2.jpg";
-import Pi3 from "../assets/images/past/3.jpg";
-import Pi4 from "../assets/images/past/4.jpg";
-import Pi5 from "../assets/images/past/5.jpg";
-import Pi6 from "../assets/images/past/6.jpg";
-import Pi7 from "../assets/images/past/7.jpg";
-import Pi8 from "../assets/images/past/8.jpg";
-import Pi9 from "../assets/images/past/9.jpg";
-import Pi10 from "../assets/images/past/10.jpg";
-import Pi11 from "../assets/images/past/11.jpg";
-import Pi12 from "../assets/images/past/12.jpg";
+import Pi1 from "/src/assets/images/past/1.jpg";
+import Pi2 from "/src/assets/images/past/2.jpg";
+import Pi3 from "/src/assets/images/past/3.jpg";
+import Pi4 from "/src/assets/images/past/4.jpg";
+import Pi5 from "/src/assets/images/past/5.jpg";
+import Pi6 from "/src/assets/images/past/6.jpg";
+import Pi7 from "/src/assets/images/past/7.jpg";
+import Pi8 from "/src/assets/images/past/8.jpg";
+import Pi9 from "/src/assets/images/past/9.jpg";
+import Pi10 from "/src/assets/images/past/10.jpg";
+import Pi11 from "/src/assets/images/past/11.jpg";
+import Pi12 from "/src/assets/images/past/12.jpg";
 
 const HorizontalMovieReelSlider = ({ direction = 'leftToRight', slideInterval = 2000 }) => {
   const containerRef = useRef(null);

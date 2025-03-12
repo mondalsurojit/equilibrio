@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import Pi1 from "../assets/images/past/1.jpg"
+import Pi1 from "/src/assets/images/past/
 import Pi2 from "../assets/images/past/2.jpg"
 import Pi3 from "../assets/images/past/3.jpg"
 import Pi4 from "../assets/images/past/4.jpg"
