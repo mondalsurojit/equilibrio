@@ -3,8 +3,7 @@ import { ChevronDown } from 'lucide-react';
 
 import CountDown from './countdown.component';
 import VerticalMovieReelSlider from './VerticalMovieReelSlider.component';
-// import HorizontalMovieReelSlider from './HorizontalMovieReelSlider.component';
-import HeroBg from '../components/HeroBg.component';
+import HeroBg from './HeroBg.component';
 
 const Hero = () => {
     const [isLoaded, setIsLoaded] = useState(false);
