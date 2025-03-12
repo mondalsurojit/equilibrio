@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 
-import Pi1 from "@/assets/images/past/404error.png";
+import Pi1 from "@/assets/images/past/1.jpg";
 import Pi2 from "@/assets/images/past/404error.png";
 import Pi3 from "@/assets/images/past/404error.png";
 import Pi4 from "@/assets/images/past/404error.png";
