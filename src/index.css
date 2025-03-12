@@ -1,0 +1,128 @@
+@import "tailwindcss";
+@layer theme, base, components, utilities;
+
+@theme {
+    /* dark: section gradient */
+    --color-gradient-1: linear-gradient(to bottom, rgb(18, 27, 46), transparent);
+    /* light: section gradient */
+    --color-gradient-2: linear-gradient(to bottom, rgb(199, 210, 254, .3), transparent);
+    /* light: navbar item hover */
+    --color-gradient-3: linear-gradient(to bottom, rgb(199, 210, 254, .6), rgb(224, 231, 255, .6));
+    /* light: integrationIcons inner gradient */
+    --color-gradient-4: linear-gradient(to bottom, rgb(199, 210, 254), transparent);
+    --font-robotics: 'robotics';
+    --font-mechanism: 'mechanism';
+}
+
+@font-face {
+    font-family: 'robotics';
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    src: url("assets/fonts/robotics.ttf") format('opentype');
+}
+
+@font-face {
+    font-family: 'mechanism';
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    src: url("assets/fonts/Mechanism.otf") format('opentype');
+}
+
+@layer base {
+    * {
+        outline: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        list-style: none;
+        color: white;
+        letter-spacing: -0.01em;
+        transition: all 0.1s ease-in-out;
+        scroll-behavior: smooth;
+        user-select: text;
+    }
+
+    :root {
+        overflow-x: hidden;
+        width: 100%;
+        -webkit-font-smoothing: antialiased;
+    }
+
+    :root::-webkit-scrollbar {
+        display: none;
+    }
+
+    ::selection {
+        background-color: #f9f9f9;
+        color: #000;
+    }
+}
+
+/* Base metallic sheen effect */
+.metallic-gold::before,
+.metallic-silver::before,
+.metallic-bronze::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(90deg,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(255, 255, 255, 0.2) 25%,
+            rgba(255, 255, 255, 0.4) 50%,
+            rgba(255, 255, 255, 0.2) 75%,
+            rgba(255, 255, 255, 0) 100%);
+    transform: skewX(-15deg);
+    animation: shine 4s infinite;
+}
+
+/* Gold specific shimmer */
+.metallic-gold::before {
+    animation-duration: 5s;
+    background: linear-gradient(90deg,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(255, 255, 255, 0.1) 20%,
+            rgba(255, 215, 0, 0.3) 50%,
+            rgba(255, 255, 255, 0.1) 80%,
+            rgba(255, 255, 255, 0) 100%);
+}
+
+/* Silver specific shimmer */
+.metallic-silver::before {
+    animation-duration: 6s;
+    background: linear-gradient(90deg,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(255, 255, 255, 0.1) 20%,
+            rgba(220, 220, 220, 0.3) 50%,
+            rgba(255, 255, 255, 0.1) 80%,
+            rgba(255, 255, 255, 0) 100%);
+}
+
+/* Bronze specific shimmer */
+.metallic-bronze::before {
+    animation-duration: 7s;
+    background: linear-gradient(90deg,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(255, 255, 255, 0.1) 20%,
+            rgba(205, 127, 50, 0.3) 50%,
+            rgba(255, 255, 255, 0.1) 80%,
+            rgba(255, 255, 255, 0) 100%);
+}
+
+/* Shine animation */
+@keyframes shine {
+    0% {
+        left: -100%;
+    }
+
+    20% {
+        left: 100%;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
