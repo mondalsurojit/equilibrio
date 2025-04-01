@@ -1,18 +1,33 @@
-import React from 'react';
+import React, {useEffect} from 'react';
+import { Link, useLocation } from 'react-router-dom';
+
 import wormhole from '../assets/images/wormhole.png';
 import Logo from "../assets/images/neweq.png";
 import { Facebook, Instagram, Linkedin, Youtube, Twitter, Phone, Mail } from 'lucide-react';
 
-const FooterBlock = ({ title, links, alignment = "text-left" }) => {
+const FooterBlock = ({ title, links, alignment = "text-center" }) => {
+    const location = useLocation();
+
+    useEffect(() => {
+        // Scroll to the section based on the current URL hash
+        const hash = location.hash;
+        if (hash) {
+            const element = document.querySelector(hash);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    }, [location]);
+
     return (
         <div className={alignment}>
             <h6 className="mb-3 text-xs leading-normal font-mechanism uppercase text-black dark:text-gray-400 underline">{title}</h6>
             <ul className="text-sm leading-6 font-robotics">
                 {links.map((link, index) => (
                     <li className="mt-1.5" key={index}>
-                        <a className="text-gray-500 transition ease-in-out duration-150 hover:text-gray-800 dark:hover:text-white" href={link.href}>
+                        <Link to={link.href} className="text-gray-500 transition ease-in-out duration-150 hover:text-gray-800 dark:hover:text-white">
                             {link.label}
-                        </a>
+                        </Link>
                     </li>
                 ))}
             </ul>
@@ -26,15 +41,15 @@ const Footer = () => {
     const iconHoverColor = "hover:text-indigo-400";
 
     const informationLinks = [
-        { label: "About Us", href: "#about" },
-        { label: "Workshops", href: "#workshops" },
-        { label: "Sponsors", href: "#sponsors" },
-        { label: "FAQs", href: "#faqs" },
+        { label: "About Us", href: "/#about" },
+        { label: "Events", href: "/events#events" },
+        { label: "Sponsors", href: "/#sponsors" },
+        { label: "FAQs", href: "/#faqs" },
     ];
 
     const peekIntoLinks = [
         { label: "Desk of", href: "#desk" },
-        { label: "Teams", href: "#teams" },
+        { label: "Teams", href: "/teams#teams" },
         { label: "Events", href: "#events" },
         { label: "Gallery", href: "#gallery" },
     ];
@@ -44,55 +59,56 @@ const Footer = () => {
             <img src={wormhole} alt="" className='absolute -top-20 md:-top-44 lg:-top-64 left-1/2 -translate-x-1/2 w-full sm:w-3/5 h-auto object-cover -z-0 m-auto pointer-events-none' />
 
             {/* Blocks */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 py-12">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 py-12">
 
                 {/* 1st block - Contact (Left aligned) */}
-                <div className="text-left">
+                <div className="text-center md:text-left">
                     <h6 className="mb-3 text-xs leading-normal font-mechanism uppercase text-black dark:text-gray-400 underline">GET IN TOUCH WITH US</h6>
                     <div className="text-sm font-robotics text-gray-500">
-                        <a href="tel:+91" className="flex items-center mt-2 group">
+                        <a href="tel:+918604063102" className="flex items-center justify-center md:justify-start mt-2 group">
                             <Phone className={`h-5 w-5 mr-2 ${iconColor} ${iconHoverColor}`} />
-                            <p className="font-mono text-gray-500 group-hover:text-white">+91 76778 60002</p>
+                            <p className="font-mono text-gray-500 group-hover:text-white">+91 86040 63102</p>
                         </a>
-                        <a href="mailto:coordinator@gmail.com" className="flex items-center mt-2 group">
+                        <a href="mailto:coordinator@gmail.com" className="flex items-center justify-center md:justify-start mt-2 group">
                             <Mail className={`h-5 w-5 mr-2 ${iconColor} ${iconHoverColor}`} />
                             <p className="tracking-wide text-gray-500 group-hover:text-white">coordinator@gmail.com</p>
                         </a>
                     </div>
                 </div>
 
-                {/* Information (Center aligned) */}
-                <FooterBlock title="INFORMATION" links={informationLinks} alignment="text-center" />
+                <div className='flex justify-evenly md:justify-between'>
+                    {/* Information (Center aligned) */}
+                    <FooterBlock title="INFORMATION" links={informationLinks} />
 
-                {/* Peek Into (Center aligned) */}
-                <FooterBlock title="PEEK INTO" links={peekIntoLinks} alignment="text-center" />
-
+                    {/* Peek Into (Center aligned) */}
+                    <FooterBlock title="PEEK INTO" links={peekIntoLinks} />
+                </div>
                 {/* Social Follow (Right aligned) */}
-                <div className="text-right">
+                <div className="text-center md:text-right">
                     <h6 className="mb-3 text-xs leading-normal font-mechanism uppercase text-black dark:text-gray-400 underline">FOLLOW US ON:</h6>
-                    <ul className="flex space-x-4 justify-end">
+                    <ul className="flex space-x-4 justify-center md:justify-end">
                         <li>
-                            <a className="transition ease-in-out duration-150" href="#0" aria-label="Facebook">
+                            <a className="transition ease-in-out duration-150" href="https://www.facebook.com/equilibrio.fest/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                                 <Facebook className={`h-5 w-5 ${iconColor} ${iconHoverColor} transition duration-300`} />
                             </a>
                         </li>
                         <li>
-                            <a className="transition ease-in-out duration-150" href="#0" aria-label="Instagram">
+                            <a className="transition ease-in-out duration-150" href="https://www.instagram.com/equilibrio.ggv/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                                 <Instagram className={`h-5 w-5 ${iconColor} ${iconHoverColor} transition duration-300`} />
                             </a>
                         </li>
                         <li>
-                            <a className="transition ease-in-out duration-150" href="#0" aria-label="LinkedIn">
+                            <a className="transition ease-in-out duration-150" href="https://www.linkedin.com/company/equilibrio-ggv/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                                 <Linkedin className={`h-5 w-5 ${iconColor} ${iconHoverColor} transition duration-300`} />
                             </a>
                         </li>
                         <li>
-                            <a className="transition ease-in-out duration-150" href="#0" aria-label="YouTube">
+                            <a className="transition ease-in-out duration-150" href="https://www.youtube.com/@EquilibrioTechfestGGVBilaspur/" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
                                 <Youtube className={`h-5 w-5 ${iconColor} ${iconHoverColor} transition duration-300`} />
                             </a>
                         </li>
                         <li>
-                            <a className="transition ease-in-out duration-150" href="#0" aria-label="Twitter">
+                            <a className="transition ease-in-out duration-150" href="https://x.com/equilibrioggv" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
                                 <Twitter className={`h-5 w-5 ${iconColor} ${iconHoverColor} transition duration-300`} />
                             </a>
                         </li>
@@ -103,9 +119,9 @@ const Footer = () => {
             {/* Bottom area */}
             <div className="pb-8 flex flex-col gap-3 items-center justify-center">
                 <div className="inline-flex items-center">
-                    <a className="text-gray-500 transition ease-in-out duration-150 hover:text-gray-800 dark:hover:text-white font-robotics text-xs cursor-pointer">Privacy Policy</a>
+                    <a href="/privacy-policy" className="text-gray-500 transition ease-in-out duration-150 hover:text-gray-800 dark:hover:text-white font-robotics text-xs cursor-pointer">Privacy Policy</a>
                     <span className="text-gray-500 px-2">▪</span>
-                    <a className="text-gray-500 transition ease-in-out duration-150 hover:text-gray-800 dark:hover:text-white font-robotics text-xs cursor-pointer">Credits</a>
+                    <a href="/credits" className="text-gray-500 transition ease-in-out duration-150 hover:text-gray-800 dark:hover:text-white font-robotics text-xs cursor-pointer">Credits</a>
                 </div>
                 <div className="mb-2 flex items-center gap-3 -translate-y-2">
                     <p className="text-sm font-bold tracking-wider font-robotics text-gray-500">Copyright</p>

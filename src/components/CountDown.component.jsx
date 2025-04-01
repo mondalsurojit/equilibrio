@@ -9,6 +9,7 @@ const CountDown = ({ targetDate }) => {
   });
   
   const [animate, setAnimate] = useState(false);
+  const [isComplete, setIsComplete] = useState(false);
 
   useEffect(() => {
     // Parse the target date if it's a string
@@ -19,6 +20,13 @@ const CountDown = ({ targetDate }) => {
     const updateCountdown = () => {
       const now = new Date().getTime();
       const distance = target - now;
+      
+      // Check if the countdown has reached zero or gone negative
+      if (distance <= 0) {
+        setTimeRemaining({ days: 0, hours: 0, minutes: 0, seconds: 0 });
+        setIsComplete(true);
+        return;
+      }
       
       // Calculation for days, hours, minutes and seconds
       const days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -39,7 +47,7 @@ const CountDown = ({ targetDate }) => {
     // Set up interval for updates
     const intervalId = setInterval(updateCountdown, 1000);
     
-    // Clean up interval on unmount
+    // Clean up interval on unmount or when countdown completes
     return () => clearInterval(intervalId);
   }, [targetDate]);
   
@@ -49,7 +57,7 @@ const CountDown = ({ targetDate }) => {
   // Render the individual time unit with its label
   const TimeUnit = ({ value, label }) => (
     <div className="flex flex-col items-center">
-      <div className={`relative overflow-hidden ${animate ? 'transform-gpu scale-105 transition-transform duration-300' : 'transition-transform duration-300'}`}>
+      <div className={`relative overflow-hidden ${animate && !isComplete ? 'transform-gpu scale-105 transition-transform duration-300' : 'transition-transform duration-300'}`}>
         <div className="bg-gradient-to-b from-slate-800 to-slate-900 border border-cyan-500/30 rounded-lg p-1 xs:p-2 md:p-3 lg:p-4 w-10 xs:w-12 sm:w-16 md:w-20 lg:w-24 shadow-lg relative">
           {/* Abstract tech lines */}
           <div className="absolute inset-0 overflow-hidden opacity-20">

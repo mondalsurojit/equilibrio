@@ -12,7 +12,7 @@ const Navbar = () => {
     };
 
     return (
-        <div className="absolute sm:absolute top-3 left-1/2 transform -translate-x-1/2 max-w-screen-md w-full z-40">
+        <div className="fixed sm:fixed top-3 left-1/2 transform -translate-x-1/2 max-w-screen-md w-full z-40">
             <div className="mx-auto max-w-screen-md w-full md:w-[780px] p-1.5 bg-violet-400 bg-opacity-30 dark:bg-slate-900/90 rounded-sm border-x border-gray-200 dark:border-slate-800">
                 <div className="h-12 flex justify-between items-center rounded-lg gap-x-2 bg-white bg-opacity-80 dark:bg-slate-700/60 backdrop-blur px-4 sm:px-3 shadow border border-indigo-300 dark:border-slate-600 border-opacity-60">
                     {/* Site logo */}
@@ -60,10 +60,9 @@ const Navbar = () => {
                 </div>
 
                 {/* Mobile menu dropdown with smooth animation */}
-                <div 
-                    className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${
-                        mobileMenuOpen ? "max-h-64 opacity-100" : "max-h-0 opacity-0"
-                    }`}
+                <div
+                    className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${mobileMenuOpen ? "max-h-64 opacity-100" : "max-h-0 opacity-0"
+                        }`}
                 >
                     <div className="bg-white dark:bg-slate-800 shadow-lg mt-1 rounded-lg border border-indigo-300 dark:border-slate-600 border-opacity-60">
                         <ul className="py-2 px-4 space-y-2">

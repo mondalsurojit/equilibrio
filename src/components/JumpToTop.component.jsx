@@ -35,7 +35,7 @@ const JumpToTop = () => {
   const offset = circumference - (scrollProgress / 100) * circumference;
 
   return (
-    <div className="fixed bottom-5 right-5">
+    <div className="fixed bottom-5 right-5 z-40">
       {isVisible && (
         <button
           onClick={scrollToTop}

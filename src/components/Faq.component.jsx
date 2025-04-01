@@ -40,7 +40,7 @@ const FaqCard = ({ question, answer }) => {
 
 const Faq = () => {
     return (
-        <main className="relative grow px-4 sm:px-6 py-12 md:py-20 max-w-6xl mx-auto" id="faq">
+        <main className="relative grow px-4 sm:px-6 py-12 md:py-20 max-w-6xl mx-auto" id="faqs">
             <section className="mx-auto max-w-screen-md pb-16 text-center">
                 <h1 className="text-2xl leading-[1.2] tracking-[-0.017em] font-bold md:text-6xl md:leading-none md:tracking-[-0.017em] mb-4 font-robotics bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600">FAQ</h1>
                 <p className="text-lg leading-normal tracking-[-0.017em] text-gray-500 font-mechanism">

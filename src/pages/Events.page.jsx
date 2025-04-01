@@ -5,7 +5,7 @@ import { Calendar, Clock, MapPin, Users, Award, Layers, Code, Cpu, Database, Zap
 const Events = () => {
     const [isLoaded, setIsLoaded] = useState(false);
     const [selectedCategory, setSelectedCategory] = useState('all');
-    
+
     // Categories and their icons
     const categories = [
         { id: 'all', name: 'All Events', icon: <Layers size={20} /> },
@@ -16,7 +16,7 @@ const Events = () => {
         { id: 'design', name: 'Design', icon: <Monitor size={20} /> },
         { id: 'networking', name: 'Networking', icon: <Network size={20} /> },
     ];
-    
+
     // Events data
     const eventsData = [
         {
@@ -124,65 +124,64 @@ const Events = () => {
             image: "/images/events/innovation.jpg"
         }
     ];
-    
+
     // Filter events based on selected category
-    const filteredEvents = selectedCategory === 'all' 
-        ? eventsData 
+    const filteredEvents = selectedCategory === 'all'
+        ? eventsData
         : eventsData.filter(event => event.category === selectedCategory);
 
     return (
-        <section className="relative min-h-screen w-full overflow-hidden bg-gray-900 text-white">
+        <section className="relative min-h-screen w-full overflow-hidden bg-gray-900 text-white" id="events">
             {/* Three.js background canvas (only if WebGL is supported) */}
-            <section className="absolute inset-0 z-0 h-full w-full">
-                <HeroBg loadStatus={setIsLoaded} />
-            </section>
+            <section className="absolute inset-0 z-0 h-screen w-full"><HeroBg loadStatus={setIsLoaded} /></section>
 
             {/* Content container - Stay above Three.js canvas */}
             <div className={`relative z-30 w-full transition-opacity duration-1000 ${isLoaded ? 'opacity-100' : 'opacity-0'}`}>
                 <div className="container max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20 h-full">
                     {/* Main content */}
-                    <main className="max-w-7xl mx-auto py-16 sm:py-20 lg:py-24">
-                        
+                    <main className="max-w-7xl mx-auto pt-16 sm:pt-20 lg:pt-24">
+
                         {/* Header */}
-                        <div className="text-center mb-16">
-                            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-blue-500 mb-6" style={{ fontFamily: 'Robotics, sans-serif' }}>
+                        <div className="relative text-center mb-16">
+                            <div className="absolute w-1/2 h-16 top-1 left-1/2 -translate-x-1/2 bg-slate-900 rounded-4xl blur-3xl -z-10"></div>
+                            <div className="absolute w-3/4 h-16 top-32 left-1/2 -translate-x-1/2 bg-slate-900 rounded-4xl blur-3xl -z-10"></div>
+                            <h1 className="text-5xl md:text-6xl lg:text-7xl font-robotics font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-blue-500 mb-6 drop-shadow-md">
                                 TECH EVENTS
                             </h1>
                             <div className="w-32 h-1 bg-purple-500 mx-auto mb-8 rounded-full"></div>
-                            <p className="text-xl text-gray-300 max-w-3xl mx-auto" style={{ fontFamily: 'Mechanism, sans-serif' }}>
+                            <p className="text-xl text-gray-300 font-mechanism max-w-3xl mx-auto drop-shadow-md">
                                 Explore our cutting-edge technical events designed to challenge your skills and expand your horizons
                             </p>
                         </div>
-                        
+
                         {/* Category Tabs */}
                         <div className="flex flex-wrap justify-center mb-16 gap-2 z-10">
                             {categories.map((category) => (
                                 <button
                                     key={category.id}
                                     onClick={() => setSelectedCategory(category.id)}
-                                    className={`flex items-center px-4 py-2 rounded-full transition-all ${
-                                        selectedCategory === category.id
-                                            ? 'bg-purple-600 text-white shadow-lg shadow-purple-600/30'
-                                            : 'bg-gray-800 text-gray-300 hover:bg-gray-700'
-                                    }`}
+                                    className={`flex items-center px-4 py-2 rounded-full transition-all ${selectedCategory === category.id
+                                        ? 'bg-purple-600 text-white shadow-lg shadow-purple-600/30'
+                                        : 'bg-gray-800 text-gray-300 hover:bg-gray-700'
+                                        }`}
                                 >
                                     <span className="mr-2">{category.icon}</span>
-                                    <span style={{ fontFamily: 'Mechanism, sans-serif' }}>{category.name}</span>
+                                    <span className="font-mechanism">{category.name}</span>
                                 </button>
                             ))}
                         </div>
-                        
+
                         {/* Events Grid */}
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                             {filteredEvents.map((event) => (
-                                <div 
-                                    key={event.id} 
+                                <div
+                                    key={event.id}
                                     className="bg-gray-800/70 backdrop-blur-sm border border-purple-500/20 rounded-lg overflow-hidden transform transition-all duration-300 hover:scale-[1.02] hover:shadow-lg hover:shadow-purple-600/20  z-10"
                                 >
-                                    <div 
-                                        className="h-48 bg-cover bg-center" 
-                                        style={{ 
-                                            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${event.image || "/api/placeholder/400/250"})` 
+                                    <div
+                                        className="h-48 bg-cover bg-center"
+                                        style={{
+                                            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${event.image || "/api/placeholder/400/250"})`
                                         }}
                                     >
                                         <div className="flex justify-end p-4">
@@ -191,65 +190,59 @@ const Events = () => {
                                             </span>
                                         </div>
                                     </div>
-                                    
+
                                     <div className="p-6">
-                                        <h3 className="text-2xl font-bold mb-3 text-purple-300" style={{ fontFamily: 'Robotics, sans-serif' }}>
+                                        <h3 className="text-2xl font-robotics font-bold mb-3 text-purple-300">
                                             {event.title}
                                         </h3>
-                                        
+
                                         <p className="text-gray-300 mb-4 text-sm">
                                             {event.description}
                                         </p>
-                                        
+
                                         <div className="space-y-2 mb-6">
                                             <div className="flex items-center text-gray-400">
                                                 <Calendar size={16} className="mr-2" />
                                                 <span>{event.date}</span>
                                             </div>
-                                            
+
                                             <div className="flex items-center text-gray-400">
                                                 <Clock size={16} className="mr-2" />
                                                 <span>{event.time}</span>
                                             </div>
-                                            
+
                                             <div className="flex items-center text-gray-400">
                                                 <MapPin size={16} className="mr-2" />
                                                 <span>{event.venue}</span>
                                             </div>
-                                            
+
                                             <div className="flex items-center text-gray-400">
                                                 <Users size={16} className="mr-2" />
                                                 <span>{event.teamSize}</span>
                                             </div>
-                                            
+
                                             <div className="flex items-center text-green-400">
                                                 <Award size={16} className="mr-2" />
                                                 <span>{event.prize}</span>
                                             </div>
                                         </div>
-                                        
-                                        <a 
-                                            href={event.registrationLink} 
-                                            className="block w-full py-2 px-4 bg-gradient-to-r from-purple-600 to-blue-600 text-white text-center rounded-md font-medium transition-transform hover:scale-[1.03] focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-opacity-50"
-                                            style={{ fontFamily: 'Mechanism, sans-serif' }}
-                                        >
-                                            Register Now
-                                        </a>
+
+                                        <a
+                                            href={event.registrationLink}
+                                            className="block w-full py-2 px-4 bg-gradient-to-r from-purple-600 to-blue-600 text-white text-center rounded-md font-mechanism font-medium transition-transform hover:scale-[1.03] focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-opacity-50">
+                                            Register Now</a>
                                     </div>
                                 </div>
                             ))}
                         </div>
-                        
+
                         {/* No Events Found Message */}
                         {filteredEvents.length === 0 && (
                             <div className="text-center py-16">
                                 <p className="text-xl text-gray-400">No events found in this category.</p>
-                                <button 
+                                <button
                                     onClick={() => setSelectedCategory('all')}
-                                    className="mt-4 px-6 py-2 bg-purple-600 text-white rounded-md hover:bg-purple-700 transition-colors"
-                                >
-                                    View All Events
-                                </button>
+                                    className="mt-4 px-6 py-2 bg-purple-600 text-white rounded-md hover:bg-purple-700 transition-colors">View All Events</button>
                             </div>
                         )}
 

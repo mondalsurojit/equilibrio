@@ -3,7 +3,7 @@ import HorizontalMovieReelSlider from './HorizontalMovieReelSlider.component';
 
 export default function About() {
     return (
-        <div className="relative grow px-4 sm:px-6 py-12 md:py-20 max-w-6xl mx-auto">
+        <div className="relative grow px-4 sm:px-6 py-12 md:py-20 max-w-6xl mx-auto" id="about">
 
             <section className="block lg:hidden">
                 <HorizontalMovieReelSlider direction="leftToRight" />
