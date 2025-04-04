@@ -239,9 +239,9 @@ const Credits = () => {
                         </div>
 
                         {/* Tech-inspired decorative elements */}
-                        <div className="absolute top-20 left-10 w-48 h-48 bg-purple-700/25 rounded-full blur-3xl"></div>
-                        <div className="absolute bottom-20 right-10 w-64 h-64 bg-blue-800/15 rounded-full blur-3xl"></div>
-                        <div className="absolute top-1/3 right-1/4 w-32 h-32 bg-cyan-700/20 rounded-full blur-3xl"></div>
+                        <div className="absolute top-20 left-10 w-48 h-48 bg-purple-700/25 rounded-full blur-3xl pointer-events-none"></div>
+                        <div className="absolute bottom-20 right-10 w-64 h-64 bg-blue-800/15 rounded-full blur-3xl pointer-events-none"></div>
+                        <div className="absolute top-1/3 right-1/4 w-32 h-32 bg-cyan-700/20 rounded-full blur-3xl pointer-events-none"></div>
 
                         {/* Circuit-inspired decorative lines */}
                         <div className="absolute top-0 left-0 w-full h-full pointer-events-none overflow-hidden -z-10">

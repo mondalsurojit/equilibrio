@@ -1,0 +1,236 @@
+{
+    "2025": {
+        "title": "EQUILIBRIO 2025",
+        "subtitle": "AAROHAN",
+        "description": "Showcasing breakthrough innovations in AI, robotics, and virtual reality with record attendance and international participation.",
+        "mainImage": "/images/highlights/2024/main.jpg",
+        "gallery": [
+            {
+                "id": 1,
+                "image": "/images/highlights/2024/gallery1.jpg",
+                "caption": "AI Hackathon Finals"
+            },
+            {
+                "id": 2,
+                "image": "/images/highlights/2024/gallery2.jpg",
+                "caption": "Robotics Competition"
+            },
+            {
+                "id": 3,
+                "image": "/images/highlights/2024/gallery3.jpg",
+                "caption": "VR Experience Zone"
+            },
+            {
+                "id": 4,
+                "image": "/images/highlights/2024/gallery4.jpg",
+                "caption": "Keynote by Tech Leaders"
+            }
+        ],
+        "stats": {
+            "participants": "2,800+",
+            "events": "42",
+            "institutions": "85"
+        },
+        "keyEvents": [
+            "48-Hour AI Solution Challenge",
+            "Autonomous Drone Racing",
+            "Blockchain Innovation Summit",
+            "Quantum Computing Workshop"
+        ]
+    },
+    "2023": {
+        "title": "EQUILIBRIO 2023",
+        "subtitle": "SOLASTA",
+        "description": "Exploring the convergence of biotechnology and computing with groundbreaking demonstrations and industry collaborations.",
+        "mainImage": "/images/highlights/2023/main.jpg",
+        "gallery": [
+            {
+                "id": 1,
+                "image": "/images/highlights/2023/gallery1.jpg",
+                "caption": "Biotech Innovation Showcase"
+            },
+            {
+                "id": 2,
+                "image": "/images/highlights/2023/gallery2.jpg",
+                "caption": "Smart Cities Pavilion"
+            },
+            {
+                "id": 3,
+                "image": "/images/highlights/2023/gallery3.jpg",
+                "caption": "Industry Connect Panel"
+            },
+            {
+                "id": 4,
+                "image": "/images/highlights/2023/gallery4.jpg",
+                "caption": "Closing Ceremony"
+            }
+        ],
+        "stats": {
+            "participants": "2,500+",
+            "events": "38",
+            "institutions": "72"
+        },
+        "keyEvents": [
+            "BioComputing Challenge",
+            "Sustainable Tech Exhibition",
+            "Neural Interface Demonstrations",
+            "Industry-Academia Conclave"
+        ]
+    },
+    "2022": {
+        "title": "EQUILIBRIO 2022",
+        "subtitle": "DIGITAL RENAISSANCE",
+        "description": "Celebrating technological revival with emphasis on post-pandemic innovations and remote collaboration tools.",
+        "mainImage": "/images/highlights/2022/main.jpg",
+        "gallery": [
+            {
+                "id": 1,
+                "image": "/images/highlights/2022/gallery1.jpg",
+                "caption": "Opening Ceremony"
+            },
+            {
+                "id": 2,
+                "image": "/images/highlights/2022/gallery2.jpg",
+                "caption": "Remote Collaboration Showcase"
+            },
+            {
+                "id": 3,
+                "image": "/images/highlights/2022/gallery3.jpg",
+                "caption": "Health Tech Innovation Awards"
+            },
+            {
+                "id": 4,
+                "image": "/images/highlights/2022/gallery4.jpg",
+                "caption": "Digital Art Exhibition"
+            }
+        ],
+        "stats": {
+            "participants": "2,200+",
+            "events": "35",
+            "institutions": "68"
+        },
+        "keyEvents": [
+            "Pandemic Tech Solutions Expo",
+            "Virtual Collaboration Hackathon",
+            "Remote Education Summit",
+            "Digital Healthcare Symposium"
+        ]
+    },
+    "2021": {
+        "title": "EQUILIBRIO 2021",
+        "subtitle": "RESILIENT FUTURE",
+        "description": "A hybrid event showcasing technology's role in navigating global challenges with virtual and limited in-person participation.",
+        "mainImage": "/images/highlights/2021/main.jpg",
+        "gallery": [
+            {
+                "id": 1,
+                "image": "/images/highlights/2021/gallery1.jpg",
+                "caption": "Virtual Opening Session"
+            },
+            {
+                "id": 2,
+                "image": "/images/highlights/2021/gallery2.jpg",
+                "caption": "Limited In-person Demo Area"
+            },
+            {
+                "id": 3,
+                "image": "/images/highlights/2021/gallery3.jpg",
+                "caption": "Online Hackathon Finals"
+            },
+            {
+                "id": 4,
+                "image": "/images/highlights/2021/gallery4.jpg",
+                "caption": "International Virtual Panel"
+            }
+        ],
+        "stats": {
+            "participants": "1,800+",
+            "events": "28",
+            "institutions": "54"
+        },
+        "keyEvents": [
+            "Global Collaboration Summit",
+            "Contactless Technology Showcase",
+            "Crisis Response Hackathon",
+            "Resilient Infrastructure Forum"
+        ]
+    },
+    "2020": {
+        "title": "EQUILIBRIO 2020",
+        "subtitle": "DIGITAL ADAPTATION",
+        "description": "A pioneering all-virtual event in response to global challenges, focusing on remote technologies and digital transformation.",
+        "mainImage": "/images/highlights/2020/main.jpg",
+        "gallery": [
+            {
+                "id": 1,
+                "image": "/images/highlights/2020/gallery1.jpg",
+                "caption": "First Virtual Opening"
+            },
+            {
+                "id": 2,
+                "image": "/images/highlights/2020/gallery2.jpg",
+                "caption": "Remote Team Competitions"
+            },
+            {
+                "id": 3,
+                "image": "/images/highlights/2020/gallery3.jpg",
+                "caption": "Virtual Reality Meetup"
+            },
+            {
+                "id": 4,
+                "image": "/images/highlights/2020/gallery4.jpg",
+                "caption": "Online Award Ceremony"
+            }
+        ],
+        "stats": {
+            "participants": "1,500+",
+            "events": "20",
+            "institutions": "45"
+        },
+        "keyEvents": [
+            "Pandemic Response Tech Challenge",
+            "Remote Work Solutions Expo",
+            "Virtual Education Hackathon",
+            "Digital Arts Festival"
+        ]
+    },
+    "2019": {
+        "title": "EQUILIBRIO 2019",
+        "subtitle": "QUANTUM LEAP",
+        "description": "An expansive celebration featuring cutting-edge quantum computing demonstrations and next-generation AI applications.",
+        "mainImage": "/images/highlights/2019/main.jpg",
+        "gallery": [
+            {
+                "id": 1,
+                "image": "/images/highlights/2019/gallery1.jpg",
+                "caption": "Quantum Computing Demo"
+            },
+            {
+                "id": 2,
+                "image": "/images/highlights/2019/gallery2.jpg",
+                "caption": "AI Research Showcase"
+            },
+            {
+                "id": 3,
+                "image": "/images/highlights/2019/gallery3.jpg",
+                "caption": "International Robotics Challenge"
+            },
+            {
+                "id": 4,
+                "image": "/images/highlights/2019/gallery4.jpg",
+                "caption": "Industry Exhibition Hall"
+            }
+        ],
+        "stats": {
+            "participants": "2,100+",
+            "events": "32",
+            "institutions": "60"
+        },
+        "keyEvents": [
+            "Quantum Algorithm Challenge",
+            "Neural Networks Showcase",
+            "Advanced Robotics Competition",
+            "Future Computing Symposium"
+        ]
+    }
+}

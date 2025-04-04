@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import faqData from "./faqData.json";
+import faqData from "../assets/data/faqsData.json";
 
 const FaqCard = ({ question, answer }) => {
     const [expanded, setExpanded] = useState(false);

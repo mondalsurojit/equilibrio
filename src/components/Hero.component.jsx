@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { ChevronDown } from 'lucide-react';
 
 import CountDown from './CountDown.component';
@@ -6,46 +7,40 @@ import VerticalMovieReelSlider from './VerticalMovieReelSlider.component';
 import HeroBg from './HeroBg.component';
 
 const Hero = () => {
-    const [isLoaded, setIsLoaded] = useState(false);
-    const [festivalStarted, setFestivalStarted] = useState(false);
-    const [festivalEnded, setFestivalEnded] = useState(false);
-    const [festivalApproaching, setFestivalApproaching] = useState(false);
+    const festStartDate = new Date("2025-03-10T09:00:00");
+    const festDuration = 3;
+    const [festStarted, setfestStarted] = useState(false);
+    const [festEnded, setfestEnded] = useState(false);
+    const [festApproaching, setfestApproaching] = useState(false);
     const [currentDay, setCurrentDay] = useState(1);
+    const [isLoaded, setIsLoaded] = useState(false);
 
-    // Configuration for festival duration (can be adjusted as needed)
-    const festivalDuration = 3; // Number of days the festival lasts
-
-    // Check if the festival has started or ended
+    // Check if the fest has started or ended
     useEffect(() => {
-        const startDate = new Date('2025-03-29T09:00:00');
-        const endDate = new Date(startDate);
-        endDate.setDate(startDate.getDate() + festivalDuration);
+        const endDate = new Date(festStartDate);
+        endDate.setDate(festStartDate.getDate() + festDuration);
         const now = new Date();
 
         if (now >= endDate) {
-            // Festival has ended
-            setFestivalEnded(true);
-            setFestivalStarted(false);
-            setFestivalApproaching(false);
-        } else if (now >= startDate) {
-            // Festival is ongoing
-            setFestivalStarted(true);
-            setFestivalEnded(false);
-            setFestivalApproaching(false);
+            setfestEnded(true);
+            setfestStarted(false);
+            setfestApproaching(false);
+        } else if (now >= festStartDate) {
+            setfestStarted(true);
+            setfestEnded(false);
+            setfestApproaching(false);
 
-            // Calculate which day of the festival it is
-            const daysDifference = Math.floor((now - startDate) / (1000 * 60 * 60 * 24));
-            setCurrentDay(daysDifference + 1 > festivalDuration ? festivalDuration : daysDifference + 1);
+            const daysDifference = Math.floor((now - festStartDate) / (1000 * 60 * 60 * 24));
+            setCurrentDay(daysDifference + 1 > festDuration ? festDuration : daysDifference + 1);
         } else {
-            // Festival hasn't started yet
-            setFestivalStarted(false);
-            setFestivalEnded(false);
-            setFestivalApproaching(true);
+            setfestStarted(false);
+            setfestEnded(false);
+            setfestApproaching(true);
         }
     }, []);
 
-    // Render the festival day indicator
-    const renderFestivalDay = () => {
+    // Render the fest day indicator
+    const renderfestDay = () => {
         return (
             <div className="py-3 flex flex-col items-center justify-center">
                 <div className='flex items-center justify-center gap-4'>
@@ -76,8 +71,8 @@ const Hero = () => {
         );
     };
 
-    // Render the post-festival message
-    const renderFestivalEnded = () => {
+    // Render the post-fest message
+    const renderfestEnded = () => {
         return (
             <div className="py-4 flex flex-col items-center justify-center">
                 <div className="flex items-center justify-center gap-1 md:gap-4">
@@ -107,6 +102,24 @@ const Hero = () => {
         );
     };
 
+    const setReminder = () => {
+        const eventTitle = encodeURIComponent("Equilibrio - Techfest 2025");
+        const eventDetails = encodeURIComponent("Don't miss out on the largest Tech-fest of Central India!");
+        const eventLocation = encodeURIComponent("New-IT Building, Guru Ghasidas University, Bilaspur");
+
+        // Format start and end date as all-day event
+        const startDate = festStartDate.toISOString().split('T')[0].replace(/-/g, "");
+        const endDate = new Date(festStartDate);
+        endDate.setDate(festStartDate.getDate() + festDuration);
+        const formattedEndDate = endDate.toISOString().split('T')[0].replace(/-/g, "");
+
+        // Google Calendar Event URL
+        const googleCalendarUrl = `https://www.google.com/calendar/render?action=TEMPLATE&text=${eventTitle}&details=${eventDetails}&location=${eventLocation}&dates=${startDate}/${formattedEndDate}`;
+
+        // Open Google Calendar in a new tab
+        window.open(googleCalendarUrl, "_blank");
+    };
+
     return (
         <section className="relative w-full overflow-hidden">
             {/* Three.js background canvas (only if WebGL is supported) */}
@@ -122,19 +135,19 @@ const Hero = () => {
                             {/* Glowing title card - Responsive sizing */}
                             <div className="relative mb-8 w-full max-w-lg sm:max-w-xl md:max-w-2xl lg:max-w-3xl">
                                 <div className="absolute -inset-0.5 bg-gradient-to-r from-cyan-500 to-purple-600 rounded-tl-4xl rounded-br-4xl blur opacity-75 animate-pulse"></div>
-                                <div className={`relative bg-slate-900/90 backdrop-blur-sm px-6 sm:px-8 md:px-10 py-10 sm:py-6 ${festivalApproaching ? 'md:py-8' : 'md:py-12'} rounded-tl-4xl rounded-br-4xl border border-slate-700 shadow-2xl`}>
+                                <div className={`relative bg-slate-900/90 backdrop-blur-sm px-6 sm:px-8 md:px-10 py-10 sm:py-6 ${festApproaching ? 'md:py-8' : 'md:py-12'} rounded-tl-4xl rounded-br-4xl border border-slate-700 shadow-2xl`}>
                                     <h1 className="text-4xl md:text-6xl lg:text-7xl tracking-wide font-robotics font-bold bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 text-center">
                                         EQUILIBRIO
                                     </h1>
                                     <h3 className="text-center text-md md:text-lg bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 uppercase tracking-wide mb-4 font-mechanism">
-                                        {festivalEnded ? "AROHAN-2025 Has Ended" :
-                                            festivalStarted ? "AROHAN-2025 Has Started" :
+                                        {festEnded ? "AROHAN-2025 Has Ended" :
+                                            festStarted ? "AROHAN-2025 Has Started" :
                                                 "AROHAN-2025 Starts In"}
                                     </h3>
 
-                                    {festivalEnded ? renderFestivalEnded() :
-                                        festivalStarted ? renderFestivalDay() :
-                                            <CountDown targetDate="2025-03-31T09:00:00" />}
+                                    {festEnded ? renderfestEnded() :
+                                        festStarted ? renderfestDay() :
+                                            <CountDown targetDate={festStartDate} />}
 
                                     <p className="text-slate-400 text-sm sm:text-md md:text-lg pt-4 rounded-lg text-center font-mechanism tracking-wide ">CREATE . CONSERVE . COMPETE</p>
                                 </div>
@@ -143,15 +156,37 @@ const Hero = () => {
 
                         {/* CTA Buttons - Responsive layout */}
                         <section className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center min-w-full">
-                            <button className="group relative w-full py-2 sm:py-2  md:py-3 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-md font-medium text-white overflow-hidden transition-all duration-300 shadow-lg shadow-blue-500/30 hover:shadow-blue-500/50 text-sm sm:text-base cursor-pointer">
+                            <Link to={festApproaching ? "/highlights#past" : "/highlights"} className="flex justify-center items-center group relative w-full py-2 sm:py-2  md:py-3 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-md font-medium text-white overflow-hidden transition-all duration-300 shadow-lg shadow-blue-500/30 hover:shadow-blue-500/50 text-sm sm:text-base cursor-pointer">
                                 <span className="relative z-10 font-mechanism">
-                                    {festivalEnded ? "View Highlights" : "Join Events"}
+                                    {festApproaching ? "Past Highlights" : "View Highlights"}
                                 </span>
                                 <div className="absolute inset-0 h-full w-0 bg-gradient-to-r from-blue-600 to-purple-600 transition-all duration-300 group-hover:w-full"></div>
-                            </button>
-                            <button className="w-full py-2 sm:py-2 md:py-3 bg-slate-800/50 backdrop-blur-sm border border-cyan-500/50 rounded-md font-medium text-cyan-400 hover:bg-slate-700/70 hover:border-cyan-400 transition-all text-sm sm:text-base cursor-pointer font-mechanism">
-                                {festivalEnded ? "See Winners" : "Explore Events"}
-                            </button>
+                            </Link>
+
+                            {festEnded ? (
+                                <a
+                                    href="https://www.new.ggu.ac.in/notifications/2/0/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="flex justify-center items-center w-full py-2 sm:py-2 md:py-3 bg-slate-800/50 backdrop-blur-sm border border-cyan-500/50 rounded-md font-medium text-cyan-400 hover:bg-slate-700/70 hover:border-cyan-400 transition-all text-sm sm:text-base cursor-pointer font-mechanism"
+                                >
+                                    Other Events
+                                </a>
+                            ) : festApproaching ? (
+                                <button
+                                    onClick={setReminder}
+                                    className="flex justify-center items-center w-full py-2 sm:py-2 md:py-3 bg-slate-800/50 backdrop-blur-sm border border-cyan-500/50 rounded-md font-medium text-cyan-400 hover:bg-slate-700/70 hover:border-cyan-400 transition-all text-sm sm:text-base cursor-pointer font-mechanism"
+                                >
+                                    Set Reminder
+                                </button>
+                            ) : (
+                                <Link
+                                    to={festStarted ? "/events" : "/events"}
+                                    className="flex justify-center items-center w-full py-2 sm:py-2 md:py-3 bg-slate-800/50 backdrop-blur-sm border border-cyan-500/50 rounded-md font-medium text-cyan-400 hover:bg-slate-700/70 hover:border-cyan-400 transition-all text-sm sm:text-base cursor-pointer font-mechanism"
+                                >
+                                    {festStarted ? "Explore Events" : "Explore Events"}
+                                </Link>
+                            )}
                         </section>
                     </main>
                 </div>

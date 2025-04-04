@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, { useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
 import wormhole from '../assets/images/wormhole.png';
@@ -43,15 +43,13 @@ const Footer = () => {
     const informationLinks = [
         { label: "About Us", href: "/#about" },
         { label: "Events", href: "/events#events" },
-        { label: "Sponsors", href: "/#sponsors" },
         { label: "FAQs", href: "/#faqs" },
     ];
 
     const peekIntoLinks = [
-        { label: "Desk of", href: "#desk" },
         { label: "Teams", href: "/teams#teams" },
-        { label: "Events", href: "#events" },
-        { label: "Gallery", href: "#gallery" },
+        { label: "Sponsors", href: "/#sponsors" },
+        { label: "Highlights", href: "/highlights" },
     ];
 
     return (

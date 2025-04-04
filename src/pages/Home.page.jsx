@@ -4,7 +4,6 @@ import Sponsors from '../components/Sponsors.component'
 import Faq from '../components/Faq.component'
 
 function Home() {
-
     return (
         <>
             <Hero />
