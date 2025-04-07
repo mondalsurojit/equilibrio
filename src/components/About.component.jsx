@@ -57,7 +57,7 @@ export default function About() {
             <section className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 text-center mt-16">
                 <div className="bg-gradient-to-br from-slate-900 to-slate-800 p-3 md:p-4 rounded-lg border border-slate-700 shadow-lg transform transition-transform hover:-translate-y-1">
                     <Code className="h-6 w-6 md:h-8 md:w-8 text-cyan-400 mx-auto mb-1" />
-                    <div className="text-2xl md:text-3xl font-bold text-cyan-400 font-mechanism">20+</div>
+                    <div className="text-2xl md:text-3xl font-bold text-cyan-400 font-mechanism">30+</div>
                     <div className="text-sm md:text-base text-slate-400 font-mechanism">Events</div>
                 </div>
                 <div className="bg-gradient-to-br from-slate-900 to-slate-800 p-3 md:p-4 rounded-lg border border-slate-700 shadow-lg transform transition-transform hover:-translate-y-1">
@@ -72,7 +72,7 @@ export default function About() {
                 </div>
                 <div className="bg-gradient-to-br from-slate-900 to-slate-800 p-3 md:p-4 rounded-lg border border-slate-700 shadow-lg transform transition-transform hover:-translate-y-1">
                     <Calendar className="h-6 w-6 md:h-8 md:w-8 text-cyan-400 mx-auto mb-1" />
-                    <div className="text-2xl md:text-3xl font-bold text-cyan-400 font-mechanism">3</div>
+                    <div className="text-2xl md:text-3xl font-bold text-cyan-400 font-mechanism">2</div>
                     <div className="text-sm md:text-base text-slate-400 font-mechanism">Epic Days</div>
                 </div>
             </section>

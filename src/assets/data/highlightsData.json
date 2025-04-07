@@ -1,236 +1,479 @@
 {
     "2025": {
         "title": "EQUILIBRIO 2025",
-        "subtitle": "AAROHAN",
+        "theme": "AAROHAN",
         "description": "Showcasing breakthrough innovations in AI, robotics, and virtual reality with record attendance and international participation.",
-        "mainImage": "/images/highlights/2024/main.jpg",
+        "mainImage": "/images/highlights/2025/eq25.jpg",
         "gallery": [
             {
                 "id": 1,
-                "image": "/images/highlights/2024/gallery1.jpg",
-                "caption": "AI Hackathon Finals"
+                "media": "/images/highlights/2025/1.jpg",
+                "caption": "Volunteers Meet"
             },
             {
                 "id": 2,
-                "image": "/images/highlights/2024/gallery2.jpg",
-                "caption": "Robotics Competition"
+                "media": "/images/highlights/2025/2.jpg",
+                "caption": "Leads Leading Together"
             },
             {
                 "id": 3,
-                "image": "/images/highlights/2024/gallery3.jpg",
-                "caption": "VR Experience Zone"
+                "media": "/images/highlights/2025/3.jpg",
+                "caption": "Aarohan Rangoli"
             },
             {
                 "id": 4,
-                "image": "/images/highlights/2024/gallery4.jpg",
-                "caption": "Keynote by Tech Leaders"
+                "media": "/images/highlights/2025/4.jpg",
+                "caption": "Chilling And Preparing"
+            },
+            {
+                "id": 5,
+                "media": "/images/highlights/2025/5.mp4",
+                "caption": "Robo-Sumo Challenge"
+            },
+            {
+                "id": 6,
+                "media": "/images/highlights/2025/6.mp4",
+                "caption": "Vibing with the Crowd"
+            },
+            {
+                "id": 7,
+                "media": "/images/highlights/2025/7.mp4",
+                "caption": "Flash Mob At City Mall-36"
+            },
+            {
+                "id": 8,
+                "media": "/images/highlights/2025/8.mp4",
+                "caption": "EDM Night"
             }
         ],
         "stats": {
             "participants": "2,800+",
-            "events": "42",
-            "institutions": "85"
-        },
-        "keyEvents": [
-            "48-Hour AI Solution Challenge",
-            "Autonomous Drone Racing",
-            "Blockchain Innovation Summit",
-            "Quantum Computing Workshop"
-        ]
+            "events": "30+",
+            "institutions": "10+"
+        }
     },
     "2023": {
         "title": "EQUILIBRIO 2023",
-        "subtitle": "SOLASTA",
+        "theme": "SOLASTA",
         "description": "Exploring the convergence of biotechnology and computing with groundbreaking demonstrations and industry collaborations.",
-        "mainImage": "/images/highlights/2023/main.jpg",
+        "mainImage": "/images/highlights/2023/eq23.jpg",
         "gallery": [
             {
                 "id": 1,
-                "image": "/images/highlights/2023/gallery1.jpg",
-                "caption": "Biotech Innovation Showcase"
+                "media": "/images/highlights/2023/1.jpeg",
+                "caption": "Quantum Frontier"
             },
             {
                 "id": 2,
-                "image": "/images/highlights/2023/gallery2.jpg",
-                "caption": "Smart Cities Pavilion"
+                "media": "/images/highlights/2023/2.jpeg",
+                "caption": "Scriptify"
             },
             {
                 "id": 3,
-                "image": "/images/highlights/2023/gallery3.jpg",
-                "caption": "Industry Connect Panel"
+                "media": "/images/highlights/2023/3.jpeg",
+                "caption": "Pixel Palooza"
             },
             {
                 "id": 4,
-                "image": "/images/highlights/2023/gallery4.jpg",
-                "caption": "Closing Ceremony"
+                "media": "/images/highlights/2023/4.jpeg",
+                "caption": "Stock Sense"
+            },
+            {
+                "id": 5,
+                "media": "/images/highlights/2023/5.mp4",
+                "caption": "Flash Mob At City Mall-36"
+            },
+            {
+                "id": 6,
+                "media": "/images/highlights/2023/6.mp4",
+                "caption": "Solasta At A Glance"
+            },
+            {
+                "id": 7,
+                "media": "/images/highlights/2023/7.mp4",
+                "caption": "Robo Soccer Challenge"
+            },
+            {
+                "id": 8,
+                "media": "/images/highlights/2023/8.mp4",
+                "caption": "Chase The Clue"
             }
         ],
         "stats": {
             "participants": "2,500+",
-            "events": "38",
-            "institutions": "72"
-        },
-        "keyEvents": [
-            "BioComputing Challenge",
-            "Sustainable Tech Exhibition",
-            "Neural Interface Demonstrations",
-            "Industry-Academia Conclave"
-        ]
+            "events": "25+",
+            "institutions": "8+"
+        }
     },
     "2022": {
         "title": "EQUILIBRIO 2022",
-        "subtitle": "DIGITAL RENAISSANCE",
+        "theme": "",
         "description": "Celebrating technological revival with emphasis on post-pandemic innovations and remote collaboration tools.",
-        "mainImage": "/images/highlights/2022/main.jpg",
+        "mainImage": "/images/highlights/2022/eq22.jpeg",
         "gallery": [
             {
                 "id": 1,
-                "image": "/images/highlights/2022/gallery1.jpg",
-                "caption": "Opening Ceremony"
+                "media": "/images/highlights/2022/1.jpeg",
+                "caption": "Equilibrio 2022 Loading..."
             },
             {
                 "id": 2,
-                "image": "/images/highlights/2022/gallery2.jpg",
-                "caption": "Remote Collaboration Showcase"
+                "media": "/images/highlights/2022/2.jpeg",
+                "caption": "Volunteers At Work"
             },
             {
                 "id": 3,
-                "image": "/images/highlights/2022/gallery3.jpg",
-                "caption": "Health Tech Innovation Awards"
+                "media": "/images/highlights/2022/3.jpeg",
+                "caption": "Where's Your Dart?"
             },
             {
                 "id": 4,
-                "image": "/images/highlights/2022/gallery4.jpg",
-                "caption": "Digital Art Exhibition"
+                "media": "/images/highlights/2022/4.jpeg",
+                "caption": "Canteen-side Volunteering"
+            },
+            {
+                "id": 5,
+                "media": "/images/highlights/2022/5.jpeg",
+                "caption": "Smile Volunteers"
+            },
+            {
+                "id": 6,
+                "media": "/images/highlights/2022/6.jpeg",
+                "caption": "So Many Queries!"
+            },
+            {
+                "id": 7,
+                "media": "/images/highlights/2022/7.mp4",
+                "caption": "No More Waiting!"
+            },
+            {
+                "id": 8,
+                "media": "/images/highlights/2022/8.mp4",
+                "caption": "Get, Set, Play"
             }
         ],
         "stats": {
             "participants": "2,200+",
-            "events": "35",
-            "institutions": "68"
-        },
-        "keyEvents": [
-            "Pandemic Tech Solutions Expo",
-            "Virtual Collaboration Hackathon",
-            "Remote Education Summit",
-            "Digital Healthcare Symposium"
-        ]
-    },
-    "2021": {
-        "title": "EQUILIBRIO 2021",
-        "subtitle": "RESILIENT FUTURE",
-        "description": "A hybrid event showcasing technology's role in navigating global challenges with virtual and limited in-person participation.",
-        "mainImage": "/images/highlights/2021/main.jpg",
-        "gallery": [
-            {
-                "id": 1,
-                "image": "/images/highlights/2021/gallery1.jpg",
-                "caption": "Virtual Opening Session"
-            },
-            {
-                "id": 2,
-                "image": "/images/highlights/2021/gallery2.jpg",
-                "caption": "Limited In-person Demo Area"
-            },
-            {
-                "id": 3,
-                "image": "/images/highlights/2021/gallery3.jpg",
-                "caption": "Online Hackathon Finals"
-            },
-            {
-                "id": 4,
-                "image": "/images/highlights/2021/gallery4.jpg",
-                "caption": "International Virtual Panel"
-            }
-        ],
-        "stats": {
-            "participants": "1,800+",
-            "events": "28",
-            "institutions": "54"
-        },
-        "keyEvents": [
-            "Global Collaboration Summit",
-            "Contactless Technology Showcase",
-            "Crisis Response Hackathon",
-            "Resilient Infrastructure Forum"
-        ]
+            "events": "20+",
+            "institutions": "8+"
+        }
     },
     "2020": {
         "title": "EQUILIBRIO 2020",
-        "subtitle": "DIGITAL ADAPTATION",
-        "description": "A pioneering all-virtual event in response to global challenges, focusing on remote technologies and digital transformation.",
-        "mainImage": "/images/highlights/2020/main.jpg",
+        "theme": "",
+        "description": "A hybrid event showcasing technology's role in navigating global challenges with virtual and limited in-person participation.",
+        "mainImage": "/images/highlights/2020/eq20.jpg",
         "gallery": [
             {
                 "id": 1,
-                "image": "/images/highlights/2020/gallery1.jpg",
-                "caption": "First Virtual Opening"
+                "media": "/images/highlights/2020/1.jpg",
+                "caption": "Cycle Gang"
             },
             {
                 "id": 2,
-                "image": "/images/highlights/2020/gallery2.jpg",
-                "caption": "Remote Team Competitions"
+                "media": "/images/highlights/2020/2.jpg",
+                "caption": "Cycle Rally Ongoing"
             },
             {
                 "id": 3,
-                "image": "/images/highlights/2020/gallery3.jpg",
-                "caption": "Virtual Reality Meetup"
+                "media": "/images/highlights/2020/3.jpg",
+                "caption": "Hit The Glass"
             },
             {
                 "id": 4,
-                "image": "/images/highlights/2020/gallery4.jpg",
-                "caption": "Online Award Ceremony"
+                "media": "/images/highlights/2020/4.jpg",
+                "caption": "Workshop Session"
+            },
+            {
+                "id": 5,
+                "media": "/images/highlights/2020/5.jpg",
+                "caption": "Rampwalk Show"
+            },
+            {
+                "id": 6,
+                "media": "/images/highlights/2020/6.jpg",
+                "caption": "Guests and Speakers"
+            },
+            {
+                "id": 7,
+                "media": "/images/highlights/2020/7.mp4",
+                "caption": "Mr. Manish Yadav"
+            },
+            {
+                "id": 8,
+                "media": "/images/highlights/2020/8.mp4",
+                "caption": "Miss Diksha Jaiswal"
             }
         ],
         "stats": {
-            "participants": "1,500+",
-            "events": "20",
-            "institutions": "45"
-        },
-        "keyEvents": [
-            "Pandemic Response Tech Challenge",
-            "Remote Work Solutions Expo",
-            "Virtual Education Hackathon",
-            "Digital Arts Festival"
-        ]
+            "participants": "2,900+",
+            "events": "25+",
+            "institutions": "10+"
+        }
     },
     "2019": {
         "title": "EQUILIBRIO 2019",
-        "subtitle": "QUANTUM LEAP",
-        "description": "An expansive celebration featuring cutting-edge quantum computing demonstrations and next-generation AI applications.",
-        "mainImage": "/images/highlights/2019/main.jpg",
+        "theme": "",
+        "description": "A hybrid event showcasing technology's role in navigating global challenges with virtual and limited in-person participation.",
+        "mainImage": "/images/highlights/2019/eq19.jpg",
         "gallery": [
             {
                 "id": 1,
-                "image": "/images/highlights/2019/gallery1.jpg",
-                "caption": "Quantum Computing Demo"
+                "media": "/images/highlights/2019/1.jpg",
+                "caption": "Workshop Session"
             },
             {
                 "id": 2,
-                "image": "/images/highlights/2019/gallery2.jpg",
-                "caption": "AI Research Showcase"
+                "media": "/images/highlights/2019/2.jpg",
+                "caption": "Tribute To Dr. APJ Abdul Kalam"
             },
             {
                 "id": 3,
-                "image": "/images/highlights/2019/gallery3.jpg",
-                "caption": "International Robotics Challenge"
+                "media": "/images/highlights/2019/3.jpg",
+                "caption": "Inauguration At New IT"
             },
             {
                 "id": 4,
-                "image": "/images/highlights/2019/gallery4.jpg",
-                "caption": "Industry Exhibition Hall"
+                "media": "/images/highlights/2019/4.jpg",
+                "caption": "Event Area"
+            },
+            {
+                "id": 5,
+                "media": "/images/highlights/2019/5.jpg",
+                "caption": "Cake Cutting Ceremony"
+            },
+            {
+                "id": 6,
+                "media": "/images/highlights/2019/6.jpg",
+                "caption": "Volunteers Group Photo"
+            },
+            {
+                "id": 7,
+                "media": "/images/highlights/2019/7.mp4",
+                "caption": "Equilibrio'19 1st Teaser"
+            },
+            {
+                "id": 8,
+                "media": "/images/highlights/2019/8.mp4",
+                "caption": "Equilibrio'19 At A Glance"
+            }
+        ],
+        "stats": {
+            "participants": "1,900+",
+            "events": "25+",
+            "institutions": "10+"
+        }
+    },
+    "2018": {
+        "title": "EQUILIBRIO 2018",
+        "theme": "",
+        "description": "A pioneering all-virtual event in response to global challenges, focusing on remote technologies and digital transformation.",
+        "mainImage": "/images/highlights/2018/eq18.jpg",
+        "gallery": [
+            {
+                "id": 1,
+                "media": "/images/highlights/2018/1.jpg",
+                "caption": "Mr. Akshay Shukla"
+            },
+            {
+                "id": 2,
+                "media": "/images/highlights/2018/2.jpg",
+                "caption": "Event Head Interview"
+            },
+            {
+                "id": 3,
+                "media": "/images/highlights/2018/3.jpg",
+                "caption": "Cake Cutting Ceremony"
+            },
+            {
+                "id": 4,
+                "media": "/images/highlights/2018/4.jpg",
+                "caption": "High On Music - I"
+            },
+            {
+                "id": 5,
+                "media": "/images/highlights/2018/5.jpg",
+                "caption": "High On Music - II"
+            },
+            {
+                "id": 6,
+                "media": "/images/highlights/2018/6.jpg",
+                "caption": "High On Music - III"
+            },
+            {
+                "id": 7,
+                "media": "/images/highlights/2018/7.jpg",
+                "caption": "Flash Mob Team"
+            },
+            {
+                "id": 8,
+                "media": "/images/highlights/2018/8.mp4",
+                "caption": "Equilibrio'18 At A Glance"
+            }
+        ],
+        "stats": {
+            "participants": "1,600+",
+            "events": "30+",
+            "institutions": "8+"
+        }
+    },
+    "2017": {
+        "title": "EQUILIBRIO 2017",
+        "theme": "",
+        "description": "An expansive celebration featuring cutting-edge quantum computing demonstrations and next-generation AI applications.",
+        "mainImage": "/images/highlights/2017/eq17.jpg",
+        "gallery": [
+            {
+                "id": 1,
+                "media": "/images/highlights/2017/1.jpg",
+                "caption": "Flash Mob At City Mall-36"
+            },
+            {
+                "id": 2,
+                "media": "/images/highlights/2017/2.jpg",
+                "caption": "Lights, Camera, Click!"
+            },
+            {
+                "id": 3,
+                "media": "/images/highlights/2017/3.jpg",
+                "caption": "Smile Volunteers"
+            },
+            {
+                "id": 4,
+                "media": "/images/highlights/2017/4.jpg",
+                "caption": "Last Moment Preparations"
+            },
+            {
+                "id": 5,
+                "media": "/images/highlights/2017/5.jpg",
+                "caption": "Inauguration Ceremony"
+            },
+            {
+                "id": 6,
+                "media": "/images/highlights/2017/6.jpg",
+                "caption": "Ribbon Cutting Ceremony"
+            },
+            {
+                "id": 7,
+                "media": "/images/highlights/2017/7.mp4",
+                "caption": "Help Desk At The Canteen"
+            },
+            {
+                "id": 8,
+                "media": "/images/highlights/2017/8.jpg",
+                "caption": "Some More Smiles!"
             }
         ],
         "stats": {
             "participants": "2,100+",
-            "events": "32",
-            "institutions": "60"
-        },
-        "keyEvents": [
-            "Quantum Algorithm Challenge",
-            "Neural Networks Showcase",
-            "Advanced Robotics Competition",
-            "Future Computing Symposium"
-        ]
+            "events": "30+",
+            "institutions": "7+"
+        }
+    },
+    "2016": {
+        "title": "EQUILIBRIO 2016",
+        "theme": "",
+        "description": "An expansive celebration featuring cutting-edge quantum computing demonstrations and next-generation AI applications.",
+        "mainImage": "/images/highlights/2016/eq16.jpg",
+        "gallery": [
+            {
+                "id": 1,
+                "media": "/images/highlights/2016/1.jpg",
+                "caption": "Crowd-Sourced Logo"
+            },
+            {
+                "id": 2,
+                "media": "/images/highlights/2016/2.jpg",
+                "caption": "Flash Mob At Road"
+            },
+            {
+                "id": 3,
+                "media": "/images/highlights/2016/3.jpg",
+                "caption": "Workshop Session"
+            },
+            {
+                "id": 4,
+                "media": "/images/highlights/2016/4.jpg",
+                "caption": "Arduino Workshop"
+            },
+            {
+                "id": 5,
+                "media": "/images/highlights/2016/5.jpg",
+                "caption": "United We Stand"
+            },
+            {
+                "id": 6,
+                "media": "/images/highlights/2016/6.jpg",
+                "caption": "Like, Comment, Share!"
+            },
+            {
+                "id": 7,
+                "media": "/images/highlights/2016/7.jpg",
+                "caption": "Robo Dudes"
+            },
+            {
+                "id": 7,
+                "media": "/images/highlights/2016/8.mp4",
+                "caption": "Equilibrio'16 At A Glance"
+            }
+        ],
+        "stats": {
+            "participants": "2,100+",
+            "events": "30+",
+            "institutions": "7+"
+        }
+    },
+    "2015": {
+        "title": "EQUILIBRIO 2015",
+        "theme": "",
+        "description": "An expansive celebration featuring cutting-edge quantum computing demonstrations and next-generation AI applications.",
+        "mainImage": "/images/highlights/2015/eq15.png",
+        "gallery": [
+            {
+                "id": 1,
+                "media": "/images/highlights/2015/1.png",
+                "caption": "Hydraulics Setup"
+            },
+            {
+                "id": 2,
+                "media": "/images/highlights/2015/2.jpg",
+                "caption": "Hydraulic Dudes"
+            },
+            {
+                "id": 3,
+                "media": "/images/highlights/2015/3.jpg",
+                "caption": "Feel The Beat"
+            },
+            {
+                "id": 4,
+                "media": "/images/highlights/2015/4.jpg",
+                "caption": "Event Timeline"
+            },
+            {
+                "id": 5,
+                "media": "/images/highlights/2015/5.png",
+                "caption": "Candlelight Peace Walk"
+            },
+            {
+                "id": 6,
+                "media": "/images/highlights/2015/6.jpg",
+                "caption": "Marketing Team"
+            },
+            {
+                "id": 7,
+                "media": "/images/highlights/2015/7.mp4",
+                "caption": "City Mall Flash Mob - I"
+            },
+            {
+                "id": 6,
+                "media": "/images/highlights/2015/8.mp4",
+                "caption": "City Mall Flash Mob - II"
+            }
+        ],
+        "stats": {
+            "participants": "2,100+",
+            "events": "30+",
+            "institutions": "7+"
+        }
     }
 }

@@ -11,6 +11,13 @@ const HeroBg = ({ loadStatus }) => {
     const [isLoaded, setIsLoaded] = useState(false);
     const [webGLSupported, setWebGLSupported] = useState(true);
 
+    // Sync internal isLoaded state with parent component
+    useEffect(() => {
+        if (isLoaded) {
+            loadStatus(true);
+        }
+    }, [isLoaded, loadStatus]);
+
     // Check for WebGL support
     useEffect(() => {
         const canvas = document.createElement('canvas');
@@ -23,12 +30,7 @@ const HeroBg = ({ loadStatus }) => {
 
         // Set loaded state even without WebGL to show content
         if (!hasWebGL) {
-            setTimeout(() =>
-                setIsLoaded((prev) => {
-                    const newState = true;
-                    loadStatus(newState);
-                    return newState;
-                }), 500);
+            setTimeout(() => setIsLoaded(true), 500);
         }
     }, []);
 
@@ -147,22 +149,13 @@ const HeroBg = ({ loadStatus }) => {
 
                 // Update renderer
                 renderer.setSize(window.innerWidth, window.innerHeight);
-
-                // Potentially rebuild particle system for major size changes
-                // (For a full implementation, you might want to rebuild particles here,
-                // but that would require disposing the old geometry and rebuilding)
             };
 
             window.addEventListener('resize', handleResize);
             animate();
 
             // Set loaded state to enable content fade-in
-            setTimeout(() =>
-                setIsLoaded((prev) => {
-                    const newState = true;
-                    loadStatus(newState);
-                    return newState;
-                }), 500);
+            setTimeout(() => setIsLoaded(true), 500);
 
             return () => {
                 // Proper cleanup
@@ -205,12 +198,7 @@ const HeroBg = ({ loadStatus }) => {
             console.log("WebGL initialization error:", error);
             setWebGLSupported(false);
             // Still set content to loaded even if WebGL fails
-            setTimeout(() =>
-                setIsLoaded((prev) => {
-                    const newState = true;
-                    loadStatus(newState);
-                    return newState;
-                }), 500);
+            setTimeout(() => setIsLoaded(true), 500);
             return () => { };
         }
     }, [webGLSupported]); // Now depends on webGLSupported check
@@ -241,4 +229,4 @@ const HeroBg = ({ loadStatus }) => {
     );
 };
 
-export default HeroBg
+export default HeroBg;

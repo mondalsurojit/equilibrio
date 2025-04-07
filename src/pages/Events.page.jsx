@@ -209,10 +209,10 @@ const Events = () => {
                                             )}
                                         </div>
 
-                                        <a
+                                        {/* <a
                                             href={event.registrationLink}
                                             className="block w-full py-2 px-4 bg-gradient-to-r from-purple-600 to-blue-600 text-white text-center rounded-md font-mechanism font-medium transition-transform hover:scale-[1.03] focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-opacity-50">
-                                            Register Now</a>
+                                            Register Now</a> */}
                                     </div>
                                 </div>
                             ))}
@@ -249,7 +249,7 @@ const Events = () => {
 
             {/* Image Modal - With fixed position navigation buttons */}
             {showImageModal && filteredEvents.length > 0 && (
-                <div className="max-w-screen-2xl mx-auto fixed inset-0 z-50 flex items-center justify-center bg-gray-800/70 backdrop-blur-sm" onClick={closeModal}>
+                <div className="max-w-screen-2xl h-screen mx-auto fixed inset-0 z-50 flex items-center justify-center bg-gray-800/70 backdrop-blur-sm" onClick={closeModal}>
                     <div className="relative w-full max-w-6xl h-[95vh] flex flex-col items-center justify-center" onClick={(e) => e.stopPropagation()}>
                         {/* Fixed position close button - always in top right corner */}
                         <button
@@ -347,13 +347,13 @@ const Events = () => {
                                                 </div>
                                             )}
 
-                                            <div className="mt-4">
+                                            {/* <div className="mt-4">
                                                 <a
                                                     href={filteredEvents[currentImageIndex].registrationLink}
                                                     className="inline-block py-2 px-4 bg-gradient-to-r from-purple-600 to-blue-600 text-white text-center rounded-md font-medium transition-transform hover:scale-[1.03]">
                                                     Register Now
                                                 </a>
-                                            </div>
+                                            </div> */}
                                         </div>
                                     </div>
                                 </div>
