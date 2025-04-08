@@ -91,7 +91,7 @@ const Highlights = () => {
                         <div className="relative flex justify-center items-center mb-12">
                             <button
                                 onClick={() => handleYearChange('left')}
-                                className="hidden md:absolute left-0 lg:left-4 p-2 rounded-full cursor-pointer bg-gray-800/70 backdrop-blur-sm border border-purple-500/30 hover:border-purple-500/60 transition-colors"
+                                className="hidden md:block absolute left-0 lg:left-4 p-2 rounded-full cursor-pointer bg-gray-800/70 backdrop-blur-sm border border-purple-500/30 hover:border-purple-500/60 transition-colors"
                                 aria-label="Previous year">
                                 <ChevronLeft size={24} className="text-purple-400" />
                             </button>
@@ -115,7 +115,7 @@ const Highlights = () => {
 
                             <button
                                 onClick={() => handleYearChange('right')}
-                                className="hidden md:absolute right-0 lg:right-4 p-2 rounded-full cursor-pointer bg-gray-800/70 backdrop-blur-sm border border-purple-500/30 hover:border-purple-500/60 transition-colors"
+                                className="hidden md:block absolute right-0 lg:right-4 p-2 rounded-full cursor-pointer bg-gray-800/70 backdrop-blur-sm border border-purple-500/30 hover:border-purple-500/60 transition-colors"
                                 aria-label="Next year">
                                 <ChevronRight size={24} className="text-purple-400" />
                             </button>

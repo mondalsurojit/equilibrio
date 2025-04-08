@@ -176,7 +176,7 @@ export default function Sponsors() {
                     <div className="relative p-8 rounded-tl-4xl rounded-br-4xl bg-gray-900 border border-blue-500 border-opacity-30">
                         <h2 className="text-xl md:text-2xl font-bold mb-4 text-white font-robotics">Interested in becoming a sponsor?</h2>
                         <p className="text-gray-300 mb-6 font-mechanism">Join our growing list of partners and help make Equilibrio an even better experience</p>
-                        <button className="flex items-center mx-auto bg-transparent border border-blue-500 text-blue-400 px-6 py-3 rounded-full font-medium transition-all hover:bg-blue-500 hover:bg-opacity-10 font-mechanism">
+                        <button className="flex items-center mx-auto bg-transparent border border-blue-500 text-blue-400 px-6 py-3 rounded-full font-medium transition-all hover:bg-slate-800 hover:bg-opacity-10 font-mechanism cursor-pointer">
                             <Play size={16} className="mr-2" /> Contact Office Team
                         </button>
                     </div>
