@@ -303,7 +303,7 @@
         "id": 25,
         "title": "Free Fire Tournament",
         "category": "e-sports",
-        "description": "Registration Fee: ₹250/- (per team. Registration last date: 24th March. POC: Tanishq Jangir, 9784633873",
+        "description": "Registration Fee: ₹250/- (per team). Registration last date: 24th March. POC: Tanishq Jangir, 9784633873",
         "date": "March 24, 2025",
         "time": "7:00 PM onwards",
         "venue": "Online",
@@ -362,5 +362,38 @@
         "teamSize": "Individual",
         "registrationLink": "#",
         "image": "/images/events/29.jpg"
+    },
+    {
+        "id": 30,
+        "title": "Abshad Ka Khel",
+        "category": "cultural",
+        "description": "By Urchins - University drama & play group. POC: 8223009209, 9131123217.",
+        "date": "March 26, 2025",
+        "time": "11:00 AM onwards",
+        "venue": "Infront of Central Auditorium",
+        "image": "/images/events/30.jpg"
+    },
+    {
+        "id": 31,
+        "title": "The Food Algorithm",
+        "category": "extras",
+        "description": "Debug your hunger! Join us for a delicious culinary adventure.",
+        "date": "March 26 & 27, 2025",
+        "time": "10:00 AM onwards",
+        "venue": "Central Auditorium",
+        "image": "/images/events/31.jpg"
+    },
+    {
+        "id": 32,
+        "title": "Blind Fold Coding",
+        "category": "fun and games",
+        "description": "Registration Fee: ₹50/- (per team). Presented by IT Tech Team. POC: Tanishq Jangir, 9784633873",
+        "date": "March 27, 2025",
+        "time": "12:00 PM onwards",
+        "venue": "Room G4, New IT Building",
+        "teamSize": "2 members",
+        "prize": "₹1,000/-",
+        "registrationLink": "#",
+        "image": "/images/events/32.jpg"
     }
 ]
